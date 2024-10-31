@@ -4,7 +4,7 @@ import data from './components/Statistics/data.json';
 import { Statistics } from './components/Statistics/Statistics';
 import friends from './components/FriendsList/friends.json';
 import { FriendsList } from './components/FriendsList/FriendsList';
-import items from './components/Transactions/transactionsData.json';
+import items from './components/Transactions/TransactionsData.json';
 import { Transactions } from './components/Transactions/Transactions';
 
 function App() {
