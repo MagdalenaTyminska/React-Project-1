@@ -1,0 +1,77 @@
+.profile {
+	border-radius: 30px;
+	background-color: white;
+	box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.41);
+	overflow: hidden;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__avatar {
+		border-radius: 50%;
+		width: 100px;
+		margin: 30px;
+		box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.41);
+	}
+
+	&__name {
+		font-size: 24px;
+	}
+
+	&__tag,
+	&__location {
+		font-size: 16px;
+		color: grey;
+		margin-top: 10px;
+	}
+
+	&__location {
+		margin-bottom: 40px;
+	}
+
+	&__stats {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__stat {
+		border: 1px solid rgb(190, 196, 195);
+		border-bottom: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		width: calc(100% / 3);
+		background-color: #e5e5ff;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+		&:first-child,
+		&:last-child {
+			border-left: none;
+			border-right: none;
+		}
+	}
+
+	&__label {
+		margin-bottom: 5px;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	&__quantity {
+		color: grey;
+	}
+}
