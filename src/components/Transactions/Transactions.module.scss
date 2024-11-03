@@ -1,0 +1,46 @@
+.transactions {
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+	&__table {
+		border-spacing: 0;
+		box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.41);
+		border-collapse: collapse;
+		border-radius: 30px;
+		overflow: hidden;
+	}
+
+	&__table:hover {
+		transform: scale(1.05);
+	}
+
+	&__header {
+		background-color: pink;
+		border-top-right-radius: 30px;
+	}
+
+	&__header_cell {
+		padding: 10px 50px 10px 50px;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-weight: bold;
+		border: 1px solid rgb(190, 196, 195);
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	&__body_cell {
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border: 1px solid rgb(190, 196, 195);
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	&__body:nth-child(2n + 1) {
+		background-color: white;
+	}
+
+	&__body:nth-child(2n) {
+		background-color: #e5e5ff;
+	}
+}
