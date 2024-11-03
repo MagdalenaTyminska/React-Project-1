@@ -1,0 +1,68 @@
+@mixin statusStyles($color) {
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	position: absolute;
+	right: 40px;
+	background-color: $color;
+}
+
+.friends {
+	margin-top: 100px;
+
+	&__friendsList {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 10px;
+		box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.41);
+		background-color: #e5e5ff;
+		border-radius: 30px;
+		position: relative;
+	}
+
+	&__item:hover {
+		transform: scale(1.05);
+	}
+
+	&__status {
+		width: 13px;
+		height: 13px;
+		border-radius: 50%;
+		background-color: gray;
+		position: absolute;
+		right: 40px;
+	}
+
+	&__status {
+		@include statusStyles(gray);
+	}
+
+	&__online {
+		@include statusStyles(green);
+	}
+
+	&__offline {
+		@include statusStyles(red);
+	}
+
+	&__avatar {
+		margin: 5px 10px 5px 10px;
+		padding: 10px;
+		background: pink;
+		border-radius: 30px;
+		box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.41);
+	}
+
+	&__name {
+		margin-left: 30px;
+		font-size: 20px;
+		font-weight: 500;
+	}
+}
